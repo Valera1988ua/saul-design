@@ -383,6 +383,6 @@
     formSubmit();
     addLoadedClass();
     window.addEventListener("load", (() => {
-        windowLoad;
+        windowLoad();
     }));
 })();
