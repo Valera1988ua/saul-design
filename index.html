@@ -11,7 +11,7 @@
 			visibility: hidden;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20230731015411">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230731021250">
 	<link rel="icon" href="favicon.ico">
 	<link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml">
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -39,7 +39,7 @@
 							<li class="menu__item"><a href="#" data-goto=".contacts" class="menu__link">Contact</a></li>
 						</ul>
 					</nav>
-					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<button type="button" aria-label="Mobile menu" class="menu__icon icon-menu"><span></span></button>
 				</div>
 			</div>
 		</header>
@@ -75,7 +75,7 @@
 						</div>
 					</div>
 					<div class="about__image">
-						<img src="img/about/about.svg" alt="Image">
+						<img data-src="img/about/about.svg" class="lazy" alt="Image">
 					</div>
 				</div>
 			</section>
@@ -93,17 +93,17 @@
 						<div class="items-works__body">
 							<a data-filter="ui" href="#" class="item-works__item">
 								<div class="item-works__image">
-									<picture><source srcset="img/works/image1.webp" type="image/webp"><img class="item__works__image" src="img/works/image1.png" alt="Image"></picture>
+									<picture><source data-srcset="img/works/image1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="item__works__image lazy" data-src="img/works/image1.png" alt="Image"></picture>
 								</div>
 							</a>
 							<a data-filter="ux" href="#" class="item-works__item">
 								<div class="item-works__image">
-									<picture><source srcset="img/works/image2.webp" type="image/webp"><img class="item__works__image" src="img/works/image2.png" alt="Image"></picture>
+									<picture><source data-srcset="img/works/image2.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="item__works__image lazy" data-src="img/works/image2.png" alt="Image"></picture>
 								</div>
 							</a>
 							<a data-filter="web" href="#" class="item-works__item">
 								<div class="item-works__image">
-									<picture><source srcset="img/works/image3.webp" type="image/webp"><img class="item__works__image" src="img/works/image3.png" alt="Image"></picture>
+									<picture><source data-srcset="img/works/image3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="item__works__image lazy" data-src="img/works/image3.png" alt="Image"></picture>
 								</div>
 							</a>
 						</div>
@@ -115,7 +115,7 @@
 					<div class="contacts__content">
 						<h2 class="contacts__title">Got a project in <span>mind?</span></h2>
 						<div class="contacts__image">
-							<img src="img/contacts/contacts.svg" alt="Image">
+							<img data-src="img/contacts/contacts.svg" class="lazy" alt="Image">
 						</div>
 					</div>
 					<form action="#" class="contacts__form form">
@@ -186,7 +186,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230731015411"></script>
+	<script src="js/app.min.js?_v=20230731021250"></script>
 </body>
 
 </html>
