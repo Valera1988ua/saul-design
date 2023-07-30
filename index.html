@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>SaulDesign</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		body {
+			opacity: 0;
+			visibility: hidden;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20230731013829">
+	<link rel="icon" href="favicon.ico">
+	<link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="preloader">
+			<div class="preloader__inner">
+				<div class="preloader__spinner"></div>
+			</div>
+		</div>
+		<header class="header">
+			<div class="header__container">
+				<a href="" class="header__logo"><img src="img/logo.svg" alt="Logo"></a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" data-goto=".main" class="menu__link">Home</a></li>
+							<li class="menu__item"><a href="#" data-goto=".about" class="menu__link">About Me</a></li>
+							<li class="menu__item"><a href="#" data-goto=".works" class="menu__link">My Works</a></li>
+							<li class="menu__item"><a href="#" data-goto=".contacts" class="menu__link">Contact</a></li>
+						</ul>
+					</nav>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__main main">
+				<div class="main__container">
+					<div class="main__content">
+						<h1 class="main__title">CREATIVE UI <mark>DESIGNER</mark></h1>
+						<div class="main__buttons">
+							<a href="#" class="main__hire-button button">Hire me</a>
+							<a href="#" class="main__cv-button button button_dark">
+								<span>Download CV</span>
+							</a>
+						</div>
+					</div>
+					<div class="main__image">
+						<img src="img/main/main.svg" alt="Image">
+					</div>
+				</div>
+			</section>
+			<section class="page__about about">
+				<div class="about__container">
+					<div class="about__content">
+						<h2 class="about__title">About <span>me</span></h2>
+						<div class="about__text">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
+								interdum, ac aliquet odio
+								mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+								himenaeos. Curabitur tempus
+								urna at turpis condimentum lobortis
+							</p>
+						</div>
+					</div>
+					<div class="about__image">
+						<img src="img/about/about.svg" alt="Image">
+					</div>
+				</div>
+			</section>
+			<section class="page__works works">
+				<div class="works__container">
+					<h2 class="works__title">My recent <span>works</span></h2>
+					<div class="works__items items-works">
+						<nav class="items-works__navigation">
+							<button type="button" data-filter="*" class="item-works__type button button_dark _active">All</button>
+							<button type="button" data-filter="ui" class="item-works__type button button_dark">UI</button>
+							<button type="button" data-filter="ux" class="item-works__type button button_dark">UX</button>
+							<button type="button" data-filter="web" class="item-works__type button button_dark">Web
+								Design</button>
+						</nav>
+						<div class="items-works__body">
+							<a data-filter="ui" href="#" class="item-works__item">
+								<div class="item-works__image">
+									<picture><source srcset="img/works/image1.webp" type="image/webp"><img class="item__works__image" src="img/works/image1.png" alt="Image"></picture>
+								</div>
+							</a>
+							<a data-filter="ux" href="#" class="item-works__item">
+								<div class="item-works__image">
+									<picture><source srcset="img/works/image2.webp" type="image/webp"><img class="item__works__image" src="img/works/image2.png" alt="Image"></picture>
+								</div>
+							</a>
+							<a data-filter="web" href="#" class="item-works__item">
+								<div class="item-works__image">
+									<picture><source srcset="img/works/image3.webp" type="image/webp"><img class="item__works__image" src="img/works/image3.png" alt="Image"></picture>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__contacts contacts">
+				<div class="contacts__container">
+					<div class="contacts__content">
+						<h2 class="contacts__title">Got a project in <span>mind?</span></h2>
+						<div class="contacts__image">
+							<img src="img/contacts/contacts.svg" alt="Image">
+						</div>
+					</div>
+					<form action="#" class="contacts__form form">
+						<div class="form__item">
+							<label for="yourName" class="form__label">Your name</label>
+							<input id="yourName" autocomplete="off" name="form[]" type="text" class="form__input" placeholder="Name" data-error="Enter your name" data-required="name" data-validate>
+						</div>
+						<div class="form__item">
+							<label for="yourEmail" class="form__label">Your email</label>
+							<input id="yourEmail" name="form[]" type="email" autocomplete="on" class="form__input" placeholder="Email" data-error="Enter your E-mail" data-required="email" data-validate>
+						</div>
+						<div class="form__item">
+							<label for="yourMessage" class="form__label">Your message</label>
+							<textarea id="yourMessage" name="form[]" placeholder="Message" class="form__input"></textarea>
+						</div>
+						<div class="form__item">
+							<button type="submit" class="form__button button">
+								<span>Send Message</span>
+							</button>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<nav class="footer__menu menu-footer">
+					<ul class="menu-footer__list">
+						<li class="menu__footer__item">
+							<a href="#" data-goto=".main" class="menu-footer__link menu-footer__link_home">Home</a>
+						</li>
+						<li class="menu__footer__item">
+							<a href="#" data-goto=".about" class="menu-footer__link menu-footer__link_about">About me</a>
+						</li>
+						<li class="menu__footer__item">
+							<a href="#" data-goto=".works" class="menu-footer__link menu-footer__link_works">My Works</a>
+						</li>
+						<li class="menu__footer__item">
+							<a href="#" data-goto=".contacts" class="menu-footer__link menu-footer__link_contact">Contact</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="footer__social social">
+					<a href="#" class="social__link">
+						<img src="img/icons/facebook.svg" alt="Icon">
+					</a>
+					<a href="#" class="social__link">
+						<img src="img/icons/instagram.svg" alt="Icon">
+					</a>
+					<a href="#" class="social__link">
+						<img src="img/icons/twitter.svg" alt="Icon">
+					</a>
+					<a href="#" class="social__link">
+						<img src="img/icons/youtube.svg" alt="Icon">
+					</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="popup" class="popup">
+		<div class="popup__body">
+			<div class="popup__content">
+				<a href="#" data-popup-close class="popup__close">
+					<img src="img/icons/close.svg" alt="Icon">
+				</a>
+				<div class="popup__title">Thank You</div>
+				<div class="popup__text"></div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230731013829"></script>
+</body>
+
+</html>
